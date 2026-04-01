@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="FB Title Optimizer">
+    <meta name="theme-color" content="#166FE5">
+    <title>Facebook Title Optimizer</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" href="icon.png">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📱 FB Title Optimizer</h1>
+            <p class="subtitle">Facebook Marketplace SEO Tool</p>
+        </header>
+
+        <div class="input-section">
+            <h2>Your Original Title</h2>
+            <textarea id="originalTitle" placeholder="Enter your product title...&#10;e.g., iPhone 13 Pro Max 256GB"></textarea>
+        </div>
+
+        <div class="button-row">
+            <button id="optimizeBtn" class="btn btn-primary" onclick="optimizeTitle()">
+                🚀 Optimize Titles
+            </button>
+            <button class="btn btn-secondary" onclick="clearAll()">
+                🗑️ Clear
+            </button>
+        </div>
+
+        <div class="output-section">
+            <div class="output-header">
+                <h2>Optimized Results</h2>
+                <button id="copyBtn" class="btn btn-small" onclick="copyResult()" disabled>
+                    📋 Copy All
+                </button>
+            </div>
+            <div id="outputArea" class="output-area"></div>
+        </div>
+
+        <div class="tips">
+            <h3>💡 Tips for Better Titles</h3>
+            <ul>
+                <li>Include brand, model, specifications</li>
+                <li>Add size, color, quantity</li>
+                <li>Focus on factual keywords only</li>
+                <li>Keep it under 100 characters</li>
+            </ul>
+        </div>
+
+        <div id="status" class="status"></div>
+    </div>
+
+    <div class="settings-btn" onclick="showSettings()">⚙️</div>
+
+    <div id="settingsModal" class="modal">
+        <div class="modal-content">
+            <h2>🔑 API Key</h2>
+            <p class="modal-hint">Enter your MiniMax API Key</p>
+            <input type="password" id="apiKeyInput" placeholder="Enter API Key">
+            <div class="modal-buttons">
+                <button class="btn btn-success" onclick="saveApiKey()">💾 Save</button>
+                <button class="btn btn-primary" onclick="testApi()">🧪 Test</button>
+                <button class="btn btn-secondary" onclick="closeSettings()">❌</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

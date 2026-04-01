@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#166FE5">
+    <title>My Tools</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="icon-192.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <!-- Header -->
+        <header class="header">
+            <h1>🚀 My Tools</h1>
+            <p class="subtitle">Your personal toolkit</p>
+        </header>
+
+        <!-- Tools Grid -->
+        <main class="tools-grid">
+            <!-- Prompt Generator -->
+            <a href="prompt-generator/index.html" class="tool-card">
+                <div class="card-icon">💡</div>
+                <h2>Prompt Generator</h2>
+                <p>提示词生成器</p>
+                <span class="card-btn">打开</span>
+            </a>
+
+            <!-- Facebook Title Optimizer -->
+            <a href="facebook-title/index.html" class="tool-card">
+                <div class="card-icon">📝</div>
+                <h2>Facebook Title</h2>
+                <p>标题优化器</p>
+                <span class="card-btn">打开</span>
+            </a>
+
+            <!-- Placeholder -->
+            <div class="tool-card disabled">
+                <div class="card-icon">🔧</div>
+                <h2>Coming Soon</h2>
+                <p>更多工具开发中...</p>
+                <span class="card-btn disabled">即将推出</span>
+            </div>
+
+            <!-- Placeholder -->
+            <div class="tool-card disabled">
+                <div class="card-icon">📦</div>
+                <h2>Coming Soon</h2>
+                <p>更多工具开发中...</p>
+                <span class="card-btn disabled">即将推出</span>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Made with ❤️</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
